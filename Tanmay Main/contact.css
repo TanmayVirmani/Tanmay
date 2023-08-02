@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav {
+    background: blue;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  }
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,
+  a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,
+    a.active {
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  #break {
+    height: calc(50vh);
+    width: 100%;
+    background-image: url(/images/3Ddot2.jpg);
+    scale: 100%;
+    background-size: 500px;
+  }
+  /*************************************Card*******************************************************/
+  div.card {
+    width: 304px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    background: #fff;
+    margin: 25px auto;
+    background-color: #eeeef3;
+    box-shadow: 10px 10px 30px 9px;
+  }
+  #contact-card-bg {
+    background-color: #170b57;
+    margin: 0;
+    padding: 20px;
+  }
+  .card img{
+    width: 240px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+  }
+  .card .card-body {
+    color: #170b57;
+    width: 240px;
+    border-radius: 10px;
+    background-color: #eeeef3;
+  }
+  .card .card-body h3 {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .card .card-body .card-text {
+    text-align: center;
+    font-family: "Lucida Sans";
+    margin-bottom: 30px;
+  }
+  .card .card-body a {
+    color: #fff;
+    background-color: #00f;
+    padding: 7px 86px;
+    border-radius: 6px;
+  }
+  .card .card-body a:hover {
+    background-color: #1b9bff;
+    padding: 12px 86px;
+    transition: 0.5s;
+  }
+  /*************************************Card End*************************************************/
+  /*************************************Form*****************************************************/
+  #form-back{
+    background: url(/images/spidey\ black\ bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 0 0 20px 0;
+    width: 100%;
+  }
+  div h1 {
+    text-align: center;
+    padding: 40px;
+    font-weight: 1000;
+    font-family: cursive;
+    color: #fff;
+  }
+  div #form{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 440px;
+    padding: 70px 100px 70px 100px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 100px 60px;
+    background: transparent;
+    background-blend-mode: overlay;
+    }
+  div #form form p input {
+    width: 100%;
+    background: #eeeef3;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    padding: 5px;
+    margin: 7px 0;
+  }
+  div #form form p textarea{
+    width: 100%;
+    background: #eeeef3;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    padding: 5px;
+    margin: 7px 0;
+  }
+  div #form form #submit_btn input {
+    width: 100%;
+    background: #00f;
+    border-radius: 12px;
+  }
+  div #form form #submit_btn input:hover{
+    background: #1b9bff;
+    cursor: pointer;
+  }
+  div #form form #submit_btn #subbtn {
+    color: #fff;
+    font-weight: bold;
+  }
+  div #form form p label {
+    color: #fff;
+    font-weight: bold;
+  }
+  /*************************************Form End*************************************************/
+  /*************************************Footer***************************************************/
+  footer{
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    font-size: 11px;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 6px 6px 6px 15px;
+  }
+  .Jumptotop {
+    color: #fff;
+    font-weight: 1000;
+    font-size: 12px;
+  }
+  footer .Jumptotop:hover {
+    color: lightgreen;
+    background: none;
+    border-radius: 3px;
+    font-size: larger;
+    transition: 0.5s;
+  }
+  footer .footsep {
+    color: white;
+    font-weight: bold;
+  }
+  /*************************************Footer End***********************************************/
